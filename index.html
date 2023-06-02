@@ -1,6 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="summer.js"></script>
+<script src="system.js"></script>
 <script>
 function sak() {
   document.getElementById("content").innerHTML = `<div class="cont"><h2>Jaunākie raksti</h2></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>`;
@@ -172,20 +173,55 @@ a {
   color: white;
 }
 
-.navbar button {
+.navbarbutton {
   float: left;
   display: block;
   color: white;
   background-color: black;
-  text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
+.navbarbutton2 {
+  min-width: 100%;
+  float: left;
+  display: block;
+  color: white;
+  background-color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+}
 
-.navbar button:hover {
+.navbarbutton:hover {
   background-color: white;
   color: black;
+}
+
+.navbarbutton2:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content2 {
+  min-width: 500%;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 150%;
+}
+
+.navbarbutton:hover .dropdown-content {
+  display: block;
+}
+
+.navbarbutton2:hover .dropdown-content2 {
+  display: block;
 }
 </style>
 
@@ -195,11 +231,78 @@ a {
 </div>
 
 <div class="navbar">
-  <button onclick="sak()">Sākums</button>
-  <button onclick="mag()">Magnētiskā aktivitāte</button>
-  <button onclick="dab()">Dabas parādības</button>
-  <button onclick="atm()">Atmosfēras slāņi</button>
-  <button onclick="vas()">Dienas lidz vasarai</button>
+  <div class="navbarbutton" onclick="sak()">Sākums</div>
+  <div class="navbarbutton">Arhīvs
+	<div class="dropdown-content">
+		<div class="navbarbutton2">2023</div><br>
+		<div class="navbarbutton2">2022</div><br>
+		<div class="navbarbutton2">2021</div><br>
+		<div class="navbarbutton2">2020</div><br>
+		<div class="navbarbutton2">2019</div><br>
+		<div class="navbarbutton2">2018</div><br>
+		<div class="navbarbutton2">2017</div><br>
+		<div class="navbarbutton2">2016
+			<div class="dropdown-content2" style="top:70%">
+				<div class="navbarbutton2" onclick="r34()">Saules aktivitāte zema, plankumu nav</div><br>
+				<div class="navbarbutton2" onclick="r33()">šodien skaidrojas</div><br>
+				<div class="navbarbutton2" onclick="r32()">Sudrabotie makoni 2016</div><br>
+				<div class="navbarbutton2" onclick="r31()">Jaunagada polarblāzmas</div><br>
+			</div>
+		</div><br>
+		<div class="navbarbutton2">2015
+			<div class="dropdown-content2"  style="top:80%">
+				<div class="navbarbutton2" onclick="r30()">30./31. iespējamas polarblāzmas</div><br>
+				<div class="navbarbutton2" onclick="r29()">Sudrabotie mākoņi, maz</div><br>
+				<div class="navbarbutton2" onclick="r28()">Sudrabotie mākoņi virs Antarktīdas</div><br>
+				<div class="navbarbutton2" onclick="r27()">Rudens ir pa īstam sācies</div><br>
+				<div class="navbarbutton2" onclick="r26()">Meteoru plūsma</div><br>
+				<div class="navbarbutton2" onclick="r25()">Par laikapstākļiem oktobrī</div><br>
+				<div class="navbarbutton2" onclick="r24()">Oktobris klāt</div><br>
+				<div class="navbarbutton2" onclick="r23()">Mēness aptumsums novērots</div><br>
+				<div class="navbarbutton2" onclick="r22()">Pilns mēness aptumsums</div><br>
+				<div class="navbarbutton2" onclick="r21()">Cirkumentizālā arka</div><br>
+				<div class="navbarbutton2" onclick="r20()">Tropiskās naktis</div><br>
+				<div class="navbarbutton2" onclick="r19()">Vasara atgriezusies!</div><br>
+				<div class="navbarbutton2" onclick="r18()">Par tuvākajiem laikapstākļiem</div><br>
+				<div class="navbarbutton2" onclick="r17()">Sudrabotie Rudē</div><br>
+				<div class="navbarbutton2" onclick="r16()">Karstums!, beidzot!</div><br>
+				<div class="navbarbutton2" onclick="r15()">Naktī uz 10.jūniju gaidāma spēcīga salna</div><br>
+				<div class="navbarbutton2" onclick="r14()">Ultravioletiais starojums ir augsts</div><br>
+				<div class="navbarbutton2" onclick="r13()">Pirmie sudrabotie mākoņi 2015</div><br>
+				<div class="navbarbutton2" onclick="r12()">Ar nepacietību gaidām NLCs</div><br>
+				<div class="navbarbutton2" onclick="r11()">22.aprīlis - silta diena</div><br>
+				<div class="navbarbutton2" onclick="r10p1()">Sudrabotie mākoņi 2007 - 2014</div><br>
+				<div class="navbarbutton2" onclick="r10()">13./14. meteoru plūsma</div><br>
+				<div class="navbarbutton2" onclick="r9p9()">Tangensa arka</div><br>
+				<div class="navbarbutton2" onclick="r9p8()">Vasaras laiks</div><br>
+				<div class="navbarbutton2" onclick="r9p7()">Saule aktivitāte ir augsta</div><br>
+				<div class="navbarbutton2" onclick="r9p6()">Saules aktivitāte palielinās</div><br>
+				<div class="navbarbutton2" onclick="r9p5()">Saules aptumsums</div><br>
+				<div class="navbarbutton2" onclick="r9p4()">Pavasaris pienācis</div><br>
+				<div class="navbarbutton2" onclick="r9p3()">Sudrabotie mākoņi beidzās</div><br>
+				<div class="navbarbutton2" onclick="r9p2()">ūdens līmeņa celšanās</div><br>
+				<div class="navbarbutton2" onclick="r9p1()">2015.01.04 iespējama polārblāzma</div><br>
+			</div>
+		</div><br>
+		<div class="navbarbutton2">2014
+			<div class="dropdown-content2" style="top:90%">
+				<div class="navbarbutton2" onclick="r9()">2014.gada apkopojums</div><br>
+				<div class="navbarbutton2" onclick="r8()">Rude novērots saules stabs</div><br>
+				<div class="navbarbutton2" onclick="r7()">Sudraboto mākoņu minimums dienvidpolā</div><br>
+				<div class="navbarbutton2" onclick="r6()">Rude novērots mini saules stabs</div><br>
+				<div class="navbarbutton2" onclick="r5()">Vētra tuvojās</div><br>
+				<div class="navbarbutton2" onclick="r4()">Pirmie sudrabotie mākoņi virs antarktīdas</div><br>
+				<div class="navbarbutton2" onclick="r3()">Ekstrēmas klases uzliesmojums</div><br>
+				<div class="navbarbutton2" onclick="r2()">Magnētiskā vētra</div><br>
+				<div class="navbarbutton2" onclick="r1()">Rudens klāt</div><br>
+			</div>
+		</div><br>
+	</div>
+  </div>
+  <div class="navbarbutton" onclick="mag()">Magnētiskā aktivitāte</div>
+  <div class="navbarbutton" onclick="dab()">Dabas parādības</div>
+  <div class="navbarbutton" onclick="atm()">Atmosfēras slāņi</div>
+  <div class="navbarbutton" onclick="vas()">Dienas lidz vasarai</div>
 </div><br>
 
 <p id="content"></p>
@@ -207,8 +310,7 @@ a {
 
 
 <div class="footer">
-  <p>Laz.1s.lv</p>
+  <p>Laz.1s.lv 2014-2023</p>
 </div>
-
 `;
 </script>
