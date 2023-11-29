@@ -1,5 +1,5 @@
 var yearv = new Date().getFullYear();
-var countDownDate = new Date("Jun 1, "+yearv+" 00:00:00").getTime();
+var countDownDate = new Date("Jun 1, 2024 00:00:00").getTime();
 var x = setInterval(function() {
 
     // Get todays date and time
