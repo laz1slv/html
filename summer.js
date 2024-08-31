@@ -1,5 +1,5 @@
 var yearv = new Date().getFullYear();
-var countDownDate = new Date("Jun 1, 2024 00:00:00").getTime();
+var countDownDate = new Date("Jun 1, 2025 00:00:00").getTime();
 var x = setInterval(function() {
 
     // Get todays date and time
@@ -12,7 +12,7 @@ var x = setInterval(function() {
     
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
-       if (days < 0 ) {
+       if (days == 273 ) {
         document.getElementById("demo").innerHTML = "Vasara ir sākusies!";
       }
    else if (days == 272 && seconds > 55 && minutes == 59) {
