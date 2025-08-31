@@ -1,5 +1,5 @@
 var yearv = new Date().getFullYear();
-var countDownDate = new Date("Jun 1, 2025 00:00:00").getTime();
+var countDownDate = new Date("Jun 1, 2026 00:00:00").getTime();
 var x = setInterval(function() {
 
     // Get todays date and time
@@ -25,3 +25,4 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Nākamā vasara būs pēc....";
     }
 }, 1000);
+
